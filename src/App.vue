@@ -1,28 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <AppHeader></AppHeader>
+    <div class="ui grid">
+      <div class="row">
+        <div class="twelve wide column">
+          <FlightStats></FlightStats>
+          <FlightMap></FlightMap>
+        </div>
+        <div class="four wide column">
+          <FlightList></FlightList>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from "./components/AppHeader";
+import FlightList from "./components/FlightList";
+import FlightStats from "./components/FlightStats";
+import FlightMap from "./components/FlightMap";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    AppHeader,
+    FlightList,
+    FlightStats,
+    FlightMap,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
