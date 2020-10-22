@@ -1,5 +1,9 @@
 # xclog-frontend-vue
 
+An online logbook application specifically for paragliding. Uses a simple drag and drop *.igc upload process to add flights.
+
+[Example]()
+
 ## Project setup
 ```
 yarn install
